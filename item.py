@@ -16,6 +16,9 @@ class Item(Updateable):
     def getQuality(self):
         return self.quality
 
+    def __repr__(self):
+        return '%s, %s, %s' % (self.name, self.sell_in, self.quality)
+
 
 if __name__ == '__main__':
 
