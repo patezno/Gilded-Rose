@@ -1,4 +1,6 @@
-class Item():
+from updateable import Updateable
+
+class Item(Updateable):
 
     def __init__(self, name, sell_in, quality):
         self.name = name
