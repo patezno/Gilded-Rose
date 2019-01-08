@@ -1,6 +1,6 @@
 from updateable import Updateable
 
-class Item(Updateable):
+class Item():
 
 
     def __init__(self, name, sell_in, quality):
@@ -29,9 +29,6 @@ if __name__ == '__main__':
 
     pato = Item('pato', '20', '4')
 
-    print(pato)
-
-    assert pato.update_quality() == None
     assert pato.getName() == 'pato'
     assert pato.getSellIn() == '20'
     assert pato.getQuality() == '4'
