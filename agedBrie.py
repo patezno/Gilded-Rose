@@ -1,7 +1,7 @@
 from regularItem import RegularItem
 
 
-class agedBrie(RegularItem):
+class AgedBrie(RegularItem):
 
 
     def update_quality(self):
@@ -14,6 +14,6 @@ class agedBrie(RegularItem):
 if __name__ == '__main__':
 
     # test case 1
-    pato = agedBrie('pato', 9, 4)
+    pato = AgedBrie('pato', 9, 4)
     pato.update_quality()
     pato.getQuality() == 5
