@@ -5,6 +5,18 @@ from updateable import Updateable
 class RegularItem(Item, Updateable):
 
 
+    def getName(self):
+        return self.name
+
+
+    def getSellIn(self):
+        return self.sell_in
+
+
+    def getQuality(self):
+        return self.quality
+
+
     def setSellIn(self):
         self.sell_in -= 1
 
