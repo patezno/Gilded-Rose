@@ -6,9 +6,9 @@ class AgedBrie(RegularItem):
 
     def update_quality(self):
         if self.getSellIn() >= 0:
-            self.quality += 1
+            self.setQuality(1)
         else:
-            self.quality += 2
+            self.setQuality(2)
 
 
 if __name__ == '__main__':

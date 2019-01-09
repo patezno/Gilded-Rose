@@ -6,11 +6,11 @@ class Backstage(RegularItem):
 
     def update_quality(self):
         if self.getSellIn() > 10:
-            self.quality += 1
+            self.setQuality(1)
         elif self.getSellIn() <= 5:
-            self.quality += 3
+            self.setQuality(3)
         elif 5 <= self.getSellIn() <= 10:
-            self.quality += 2
+            self.setQuality(2)
         else:
             self.quality = 0
 
